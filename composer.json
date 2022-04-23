@@ -1,0 +1,6 @@
+{
+  "name": "vin/sources-lib",
+  "require": {
+    "laravel/framework": "^9.2"
+  }
+}
