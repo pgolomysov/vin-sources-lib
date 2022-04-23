@@ -1,6 +1,6 @@
 <?php
 
-namespace VinSourcesLib\Jobs;
+namespace Vin\SourcesLib\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

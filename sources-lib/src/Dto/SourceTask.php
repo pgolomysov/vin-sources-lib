@@ -1,6 +1,6 @@
 <?php
 
-namespace VinSourcesLib\Dto;
+namespace Vin\SourcesLib\Dto;
 
 class SourceTask
 {
