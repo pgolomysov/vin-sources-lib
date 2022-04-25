@@ -2,9 +2,9 @@
 
 namespace Vin\SourcesLib\Enum;
 
-enum Sources: string
+class Sources
 {
-    case Gibdd      = 'gibdd';
-    case Nomerogram = 'nomerogram';
+    CONST Gibdd      = 'gibdd';
+    CONST Nomerogram = 'nomerogram';
 }
 
