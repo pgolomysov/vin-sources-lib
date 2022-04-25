@@ -2,6 +2,7 @@
 
 namespace Vin\SourcesLib\Jobs;
 
+use App\Facades\ReportComplete;
 use App\Facades\SourcesService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -27,6 +28,6 @@ class ReportCompleteJob implements ShouldQueue
      */
     public function handle()
     {
-        SourcesService::processJob($this->payload);
+        ReportComplete::processJob($this->payload);
     }
 }
