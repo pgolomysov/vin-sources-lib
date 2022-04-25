@@ -2,11 +2,13 @@
 
 namespace Vin\SourcesLib\Jobs;
 
+use App\Facades\SourcesService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use Vin\SourcesLib\Dto\SourceTask;
 
 class SourceTaskJob implements ShouldQueue
 {
@@ -26,6 +28,6 @@ class SourceTaskJob implements ShouldQueue
      */
     public function handle()
     {
-
+        SourcesService::processJob($this->payload);
     }
 }
