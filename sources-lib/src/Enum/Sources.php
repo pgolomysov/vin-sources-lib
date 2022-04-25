@@ -1,6 +1,6 @@
 <?php
 
-namespace Vin\SourcesLib\Dto;
+namespace Vin\SourcesLib\Enum;
 
 enum Sources: string
 {
